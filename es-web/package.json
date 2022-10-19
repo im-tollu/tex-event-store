@@ -10,9 +10,12 @@
     "res:start": "rescript build -w"
   },
   "devDependencies": {
+    "@rescript/react": "^0.10.3",
+    "rescript": "next",
     "vite": "^3.1.8"
   },
   "dependencies": {
-    "rescript": "next"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
