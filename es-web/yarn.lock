@@ -263,6 +263,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "es-web@workspace:."
   dependencies:
+    rescript: next
     vite: ^3.1.8
   languageName: unknown
   linkType: soft
@@ -998,6 +999,18 @@ __metadata:
     string_decoder: ^1.1.1
     util-deprecate: ^1.0.1
   checksum: d4ea81502d3799439bb955a3a5d1d808592cf3133350ed352aeaa499647858b27b1c4013984900238b0873ec8d0d8defce72469fb7a83e61d53f5ad61cb80dc8
+  languageName: node
+  linkType: hard
+
+"rescript@npm:next":
+  version: 10.1.0-rc.2
+  resolution: "rescript@npm:10.1.0-rc.2"
+  bin:
+    bsc: bsc
+    bsrefmt: bsrefmt
+    bstracing: lib/bstracing
+    rescript: rescript
+  checksum: 16eefe21017a93269cc427bb4e58df838af811ea5f501b0d4fe89cc17efcdd01167f5d64dc49eba743e0811f1be5b9e23487bc0429c1e0b758968e3869a2a4d1
   languageName: node
   linkType: hard
 
