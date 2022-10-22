@@ -788,7 +788,7 @@ __metadata:
     "@vitejs/plugin-react": ^2.1.0
     react: ^18.2.0
     react-dom: ^18.2.0
-    rescript: next
+    rescript: 10.1.0-rc.2
     rescript-webapi: ^0.6.1
     vite: ^3.1.8
   languageName: unknown
@@ -1734,7 +1734,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rescript@npm:next":
+"rescript@npm:10.1.0-rc.2":
   version: 10.1.0-rc.2
   resolution: "rescript@npm:10.1.0-rc.2"
   bin:
