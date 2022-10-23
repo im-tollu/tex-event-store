@@ -432,6 +432,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ryyppy/rescript-promise@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@ryyppy/rescript-promise@npm:2.1.0"
+  checksum: 47761ce48800e3e169d2fc6d0d381a15dd7a724e3d7a31297b5cffec30273d46f310dd9f96452fc027523950d4ab5c02a1a21d94bb06190070a30bcfc2783308
+  languageName: node
+  linkType: hard
+
 "@tootallnate/once@npm:2":
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
@@ -855,10 +862,12 @@ __metadata:
   dependencies:
     "@jihchi/vite-plugin-rescript": ^4.1.0
     "@rescript/react": ^0.10.3
+    "@ryyppy/rescript-promise": ^2.1.0
     "@vitejs/plugin-react": ^2.1.0
     react: ^18.2.0
     react-dom: ^18.2.0
     rescript: 10.1.0-rc.2
+    rescript-vitest: ^0.3.0
     rescript-webapi: ^0.6.1
     vite: ^3.1.8
     vitest: ^0.24.3
@@ -1828,6 +1837,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rescript-vitest@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "rescript-vitest@npm:0.3.0"
+  dependencies:
+    "@ryyppy/rescript-promise": ^2.1.0
+    vitest: ^0.21.1
+  peerDependencies:
+    rescript: ^9.1.0
+    vite: ^2.0.0 || ^3.0.0
+  checksum: 9625c03ae7dbce212eaf18d300b02f1f41a9514eb1aae49e44ce7e79d63a03f34956ec50d04f12b3a2ea1eb22e5e8cd987cf9b6e86821027443c6bc87ba94c99
+  languageName: node
+  linkType: hard
+
 "rescript-webapi@npm:^0.6.1":
   version: 0.6.1
   resolution: "rescript-webapi@npm:0.6.1"
@@ -2120,6 +2142,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tinypool@npm:^0.2.4":
+  version: 0.2.4
+  resolution: "tinypool@npm:0.2.4"
+  checksum: f050bd36c89529a2a0d3f9c1fdbba3f317114e3ee6eb5d5ba72c51e887d45ef3ef8d8533fb2ca2eba7189d19d2231712b81b3a75e099248532f5563369929c33
+  languageName: node
+  linkType: hard
+
 "tinypool@npm:^0.3.0":
   version: 0.3.0
   resolution: "tinypool@npm:0.3.0"
@@ -2127,7 +2156,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinyspy@npm:^1.0.2":
+"tinyspy@npm:^1.0.0, tinyspy@npm:^1.0.2":
   version: 1.0.2
   resolution: "tinyspy@npm:1.0.2"
   checksum: 32096121aa8d52bb625ad62c9314b3e4daba4ab9ac428217b12b1e1dfe9860e3c94d54a7affa279cc70dc6f10d88c6ba46b51de68896b318a06d02f05e87dcc3
@@ -2187,7 +2216,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^3.0.0, vite@npm:^3.1.8":
+"vite@npm:^2.9.12 || ^3.0.0-0, vite@npm:^3.0.0, vite@npm:^3.1.8":
   version: 3.1.8
   resolution: "vite@npm:3.1.8"
   dependencies:
@@ -2216,6 +2245,45 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: 982696ad134577dd9915c4c3548ad36ddcf5dc6d341058548a670a13d860e4cdaaf2b320a59221f178018df089d148b9980e9a344316bef12b698a1c1abc7390
+  languageName: node
+  linkType: hard
+
+"vitest@npm:^0.21.1":
+  version: 0.21.1
+  resolution: "vitest@npm:0.21.1"
+  dependencies:
+    "@types/chai": ^4.3.3
+    "@types/chai-subset": ^1.3.3
+    "@types/node": "*"
+    chai: ^4.3.6
+    debug: ^4.3.4
+    local-pkg: ^0.4.2
+    tinypool: ^0.2.4
+    tinyspy: ^1.0.0
+    vite: ^2.9.12 || ^3.0.0-0
+  peerDependencies:
+    "@edge-runtime/vm": "*"
+    "@vitest/browser": "*"
+    "@vitest/ui": "*"
+    c8: "*"
+    happy-dom: "*"
+    jsdom: "*"
+  peerDependenciesMeta:
+    "@edge-runtime/vm":
+      optional: true
+    "@vitest/browser":
+      optional: true
+    "@vitest/ui":
+      optional: true
+    c8:
+      optional: true
+    happy-dom:
+      optional: true
+    jsdom:
+      optional: true
+  bin:
+    vitest: vitest.mjs
+  checksum: 27c8cd0a1e2443e1311b1ed236d66caad77dcea2c4b49364475688d89d6f8dba2074b1a2da8e7ca529ded15bd5314ff4b36119a0010a33d2dcd34333d4043bd5
   languageName: node
   linkType: hard
 

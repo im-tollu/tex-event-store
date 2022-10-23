@@ -14,8 +14,10 @@
   "devDependencies": {
     "@jihchi/vite-plugin-rescript": "^4.1.0",
     "@rescript/react": "^0.10.3",
+    "@ryyppy/rescript-promise": "^2.1.0",
     "@vitejs/plugin-react": "^2.1.0",
     "rescript": "10.1.0-rc.2",
+    "rescript-vitest": "^0.3.0",
     "rescript-webapi": "^0.6.1",
     "vite": "^3.1.8",
     "vitest": "^0.24.3"
